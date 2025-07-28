@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,17 +15,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 6 93% 71%;
+    --primary: 320 85% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 199 89% 48%;
+    --secondary: 45 100% 51%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 231 81% 90%;
-    --accent-foreground: 231 48% 48%;
+    --accent: 271 91% 65%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -109,5 +109,86 @@
   h5,
   h6 {
     font-family: "Playfair Display", serif;
+  }
+
+  .artistic-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(320, 85%, 60%) 0%,
+      hsl(45, 100%, 51%) 25%,
+      hsl(271, 91%, 65%) 50%,
+      hsl(199, 89%, 48%) 75%,
+      hsl(320, 85%, 60%) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+  }
+
+  .creative-text-shadow {
+    text-shadow:
+      2px 2px 4px rgba(199, 21, 133, 0.3),
+      -1px -1px 2px rgba(255, 193, 7, 0.2);
+  }
+
+  .artistic-border {
+    border-image: linear-gradient(
+        45deg,
+        hsl(320, 85%, 60%),
+        hsl(45, 100%, 51%),
+        hsl(271, 91%, 65%)
+      )
+      1;
+  }
+
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+    66% {
+      transform: translateY(5px) rotate(-1deg);
+    }
+  }
+
+  .creative-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .creative-hover:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.1),
+      0 0 20px rgba(199, 21, 133, 0.3);
+  }
+
+  .handwritten {
+    font-family: "Dancing Script", cursive;
+  }
+
+  .casual {
+    font-family: "Caveat", cursive;
   }
 }

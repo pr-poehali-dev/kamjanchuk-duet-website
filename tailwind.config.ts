@@ -21,6 +21,8 @@ export default {
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'dancing': ['Dancing Script', 'cursive'],
+				'caveat': ['Caveat', 'cursive'],
 			},
 			colors: {
 				coral: '#FF6B6B',
