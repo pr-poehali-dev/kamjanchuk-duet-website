@@ -337,6 +337,60 @@ const Index = () => {
             </Card>
           </div>
 
+          {/* Third Featured Song */}
+          <div className="mb-16">
+            <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="relative">
+                    <img 
+                      src="/img/2cb7c8f3-b101-4d18-a5c3-96b855bd7108.jpg" 
+                      alt="Красный конь" 
+                      className="w-full h-80 md:h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Популярное
+                    </div>
+                  </div>
+                  <div className="p-8 flex flex-col justify-center">
+                    <div className="mb-6">
+                      <h3 className="text-3xl font-bold text-gray-800 mb-2">Красный конь</h3>
+                      <p className="text-red-700 font-medium mb-2">Творческий дуэт Камянчук</p>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        Символическая композиция о силе, страсти и свободе. 
+                        Красный конь как метафора жизненной энергии и стремления к мечте, 
+                        воплощённая в мощной мелодии и поэтическом слове.
+                      </p>
+                      <div className="flex items-center gap-4 text-sm text-gray-600">
+                        <div className="flex items-center gap-2">
+                          <Icon name="Clock" size={16} className="text-red-600" />
+                          <span>4:28</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Zap" size={16} className="text-red-600" />
+                          <span>Динамичная</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <a 
+                        href="https://music.yandex.ru/album/37270767/track/140681766" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                          <Icon name="Play" size={18} className="mr-2" />
+                          Прослушать на Яндекс.Музыке
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
