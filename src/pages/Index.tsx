@@ -170,19 +170,26 @@ const Index = () => {
               <CardContent className="p-8">
                 <Icon name="Headphones" className="text-amber-600 mb-4" size={48} />
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Музыкальные альбомы</h3>
-                <ul className="space-y-3 text-gray-600 my-1.5">
-                  <li className="flex items-center gap-2">"Созвездие" (2007)</li>
+                <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center gap-2">
                     <Icon name="Disc" size={16} className="text-amber-500" />
-                    "Мелодии слов" (2022)
+                    "Созвездие" (2007)
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Disc" size={16} className="text-amber-500" />
-                    "Симфония чувств" (2023)
+                    "Я вернусь" (2008)
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Disc" size={16} className="text-amber-500" />
-                    "Гармония стиха" (2024)
+                    "Свет Булата" (2009)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Disc" size={16} className="text-amber-500" />
+                    "Я – надежда" (2019)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Disc" size={16} className="text-amber-500" />
+                    "Я рисую лето" (2019)
                   </li>
                 </ul>
               </CardContent>
