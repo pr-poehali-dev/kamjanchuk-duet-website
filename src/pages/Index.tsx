@@ -226,51 +226,72 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Concerts Section */}
-      <section id="concerts" className="py-20 px-6 bg-white">
+      {/* Songs Section */}
+      <section id="songs" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Концерты и выступления</h2>
-          <div className="space-y-6 max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Песни творческого дуэта</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
-                date: "15 марта 2024",
-                venue: "Московский дом литераторов",
-                event: "Вечер поэзии и музыки 'Весенние мотивы'",
-                status: "upcoming"
+                title: "Осенние мотивы",
+                description: "Лирическая композиция о красоте осенней природы",
+                duration: "3:45"
               },
               {
-                date: "28 февраля 2024",
-                venue: "Центральная библиотека им. Пушкина",
-                event: "Творческая встреча 'Союз слова и музыки'",
-                status: "past"
+                title: "Мамина молитва",
+                description: "Трогательная песня о материнской любви",
+                duration: "4:12"
               },
               {
-                date: "20 января 2024",
-                venue: "Культурный центр 'Меридиан'",
-                event: "Презентация нового альбома 'Гармония стиха'",
-                status: "past"
+                title: "Старая пластинка",
+                description: "Ностальгическая мелодия о воспоминаниях",
+                duration: "3:28"
+              },
+              {
+                title: "Псковская тетрадь",
+                description: "Поэтическое посвящение родному городу",
+                duration: "4:33"
+              },
+              {
+                title: "Мы - русские",
+                description: "Патриотическая песня о любви к Родине",
+                duration: "3:56"
+              },
+              {
+                title: "Я рисую лето",
+                description: "Солнечная композиция о летних днях",
+                duration: "3:21"
               }
-            ].map((concert, index) => (
-              <Card key={index} className={`shadow-lg ${concert.status === 'upcoming' ? 'border-l-4 border-l-green-500 bg-green-50' : ''}`}>
+            ].map((song, index) => (
+              <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row md:items-center justify-between">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">{concert.event}</h3>
-                      <p className="text-gray-600 mb-2">{concert.venue}</p>
-                      <div className="flex items-center gap-2">
-                        <Icon name="Calendar" size={16} className="text-purple-500" />
-                        <span className="text-sm text-purple-600 font-medium">{concert.date}</span>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                      <Icon name="Music" className="text-purple-600" size={24} />
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-800">{song.title}</h3>
+                        <p className="text-sm text-gray-600">{song.description}</p>
                       </div>
                     </div>
-                    {concert.status === 'upcoming' && (
-                      <Button className="mt-4 md:mt-0 bg-green-600 hover:bg-green-700">
-                        Забронировать билет
-                      </Button>
-                    )}
+                    <div className="flex items-center gap-2 text-purple-600">
+                      <Icon name="Clock" size={16} />
+                      <span className="text-sm font-medium">{song.duration}</span>
+                    </div>
                   </div>
+                  <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                    Прослушать
+                  </Button>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-600 mb-6">
+              Каждая песня — это частица нашей души, воплощенная в мелодию и слово
+            </p>
+            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg">
+              Послушать все песни
+            </Button>
           </div>
         </div>
       </section>
