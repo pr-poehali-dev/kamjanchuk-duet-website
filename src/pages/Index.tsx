@@ -344,7 +344,7 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative">
                     <img 
-                      src="/img/2cb7c8f3-b101-4d18-a5c3-96b855bd7108.jpg" 
+                      src="https://cdn.poehali.dev/files/d734da57-30b5-4820-8c73-9c15b4d1e369.jpg" 
                       alt="Красный конь" 
                       className="w-full h-80 md:h-full object-cover"
                     />
