@@ -148,19 +148,23 @@ const Index = () => {
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center gap-2">
                     <Icon name="Book" size={16} className="text-purple-500" />
-                    "Отражения души" (2021)
+                    «Ожидание весны»
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Book" size={16} className="text-purple-500" />
-                    "Времена года сердца" (2022)
+                    «Заплатки для души»
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Book" size={16} className="text-purple-500" />
-                    "Между строк" (2023)
+                    «На пороге осени»
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="Book" size={16} className="text-purple-500" />
-                    "Новые грани" (2024)
+                    «На родине полыни»
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Book" size={16} className="text-purple-500" />
+                    «Рождение стиха»
                   </li>
                 </ul>
               </CardContent>
@@ -282,15 +286,15 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Icon name="Mail" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">info@duet-kamyanchuk.ru</span>
+                    <a href="mailto:duet-kamyanchuk@mail.ru" className="text-gray-600 hover:text-purple-600 transition-colors">duet-kamyanchuk@mail.ru</a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Icon name="Phone" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">+7 (495) 123-45-67</span>
+                    <a href="tel:+79118881966" className="text-gray-600 hover:text-purple-600 transition-colors">+7 (911) 888-19-66</a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Icon name="MapPin" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">Москва, Россия</span>
+                    <span className="text-gray-600">Псков, Россия</span>
                   </div>
                 </div>
               </CardContent>
