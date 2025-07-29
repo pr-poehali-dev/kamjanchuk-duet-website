@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 320 85% 60%;
+    --primary: 280 100% 70%; /* ярко-фиолетовый */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 100% 51%;
+    --secondary: 330 100% 65%; /* ярко-розовый */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 271 91% 65%;
+    --accent: 200 100% 60%; /* ярко-циан */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -114,14 +114,15 @@
   .artistic-gradient {
     background: linear-gradient(
       135deg,
-      hsl(320, 85%, 60%) 0%,
-      hsl(45, 100%, 51%) 25%,
-      hsl(271, 91%, 65%) 50%,
-      hsl(199, 89%, 48%) 75%,
-      hsl(320, 85%, 60%) 100%
+      hsl(280, 100%, 70%) 0%,
+      /* ярко-фиолетовый */ hsl(330, 100%, 65%) 20%,
+      /* ярко-розовый */ hsl(200, 100%, 60%) 40%,
+      /* ярко-циан */ hsl(45, 100%, 55%) 60%,
+      /* ярко-золотой */ hsl(120, 80%, 50%) 80%,
+      /* ярко-зеленый */ hsl(280, 100%, 70%) 100% /* снова фиолетовый */
     );
-    background-size: 400% 400%;
-    animation: gradient-shift 8s ease infinite;
+    background-size: 300% 300%;
+    animation: gradient-shift 4s ease infinite;
   }
 
   @keyframes gradient-shift {
@@ -142,16 +143,18 @@
 
   .creative-text-shadow {
     text-shadow:
-      2px 2px 4px rgba(199, 21, 133, 0.3),
-      -1px -1px 2px rgba(255, 193, 7, 0.2);
+      3px 3px 8px rgba(139, 69, 19, 0.6),
+      -2px -2px 6px rgba(255, 20, 147, 0.4),
+      0 0 20px rgba(0, 255, 255, 0.3);
   }
 
   .artistic-border {
     border-image: linear-gradient(
         45deg,
-        hsl(320, 85%, 60%),
-        hsl(45, 100%, 51%),
-        hsl(271, 91%, 65%)
+        hsl(280, 100%, 70%),
+        hsl(330, 100%, 65%),
+        hsl(200, 100%, 60%),
+        hsl(45, 100%, 55%)
       )
       1;
   }
@@ -178,10 +181,11 @@
   }
 
   .creative-hover:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-8px) scale(1.05);
     box-shadow:
-      0 20px 40px rgba(0, 0, 0, 0.1),
-      0 0 20px rgba(199, 21, 133, 0.3);
+      0 25px 50px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(255, 20, 147, 0.6),
+      0 0 50px rgba(0, 255, 255, 0.4);
   }
 
   .handwritten {
@@ -190,5 +194,75 @@
 
   .casual {
     font-family: "Caveat", cursive;
+  }
+
+  /* Музыкальные эффекты */
+  .musical-pulse {
+    animation: musical-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes musical-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      filter: brightness(1) saturate(1);
+    }
+    50% {
+      transform: scale(1.05);
+      filter: brightness(1.2) saturate(1.3);
+    }
+  }
+
+  .dynamic-bg {
+    background: linear-gradient(
+      45deg,
+      hsl(280, 100%, 70%) 0%,
+      hsl(330, 100%, 65%) 25%,
+      hsl(200, 100%, 60%) 50%,
+      hsl(45, 100%, 55%) 75%,
+      hsl(120, 80%, 50%) 100%
+    );
+    background-size: 400% 400%;
+    animation: dynamic-move 6s ease infinite;
+  }
+
+  @keyframes dynamic-move {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+  }
+
+  .energy-glow {
+    box-shadow:
+      0 0 20px rgba(255, 20, 147, 0.8),
+      0 0 40px rgba(0, 255, 255, 0.6),
+      0 0 60px rgba(255, 215, 0, 0.4);
+    animation: energy-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes energy-pulse {
+    0%,
+    100% {
+      box-shadow:
+        0 0 20px rgba(255, 20, 147, 0.8),
+        0 0 40px rgba(0, 255, 255, 0.6),
+        0 0 60px rgba(255, 215, 0, 0.4);
+    }
+    50% {
+      box-shadow:
+        0 0 30px rgba(255, 20, 147, 1),
+        0 0 60px rgba(0, 255, 255, 0.8),
+        0 0 90px rgba(255, 215, 0, 0.6);
+    }
   }
 }

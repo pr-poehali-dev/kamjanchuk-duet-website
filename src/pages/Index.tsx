@@ -9,42 +9,42 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Artistic Background */}
-      <div className="fixed inset-0 artistic-gradient opacity-10 -z-10"></div>
+      {/* Яркий музыкальный фон */}
+      <div className="fixed inset-0 dynamic-bg opacity-25 -z-10"></div>
       <div className="fixed inset-0 -z-10">
         <img 
-          src="/img/ba5b92f7-0816-4675-83a3-d91857b6f50c.jpg" 
+          src="/img/d8f2e125-c6ce-437c-89ec-f0e70c0cce5e.jpg" 
           alt="" 
-          className="w-full h-full object-cover opacity-5"
+          className="w-full h-full object-cover opacity-30"
         />
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-xl z-50 border-b border-primary/20 artistic-border">
+      <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-xl z-50 border-b-2 border-primary/40 energy-glow">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-playfair font-bold text-transparent bg-clip-text artistic-gradient creative-text-shadow">
-              Дуэт Камянчук
+            <h1 className="text-3xl font-playfair font-bold text-transparent bg-clip-text artistic-gradient creative-text-shadow musical-pulse">
+              🎵 Дуэт Камянчук 🎵
             </h1>
             <div className="hidden md:flex space-x-8">
               {[
-                { label: 'Главная', id: 'hero' },
-                { label: 'О дуэте', id: 'about' },
-                { label: 'Творчество', id: 'works' },
-                { label: 'Концерты', id: 'concerts' },
-                { label: 'Медиа', id: 'media' },
-                { label: 'Контакты', id: 'contacts' }
+                { label: '🏠 Главная', id: 'hero' },
+                { label: '👥 О дуэте', id: 'about' },
+                { label: '🎵 Творчество', id: 'works' },
+                { label: '🎤 Концерты', id: 'concerts' },
+                { label: '📺 Медиа', id: 'media' },
+                { label: '📞 Контакты', id: 'contacts' }
               ].map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-gray-700 hover:text-primary transition-colors font-medium creative-hover"
+                  className="text-white hover:text-primary transition-colors font-bold creative-hover musical-pulse text-lg"
                 >
                   {item.label}
                 </button>
               ))}
             </div>
-            <Button variant="outline" className="md:hidden creative-hover">
+            <Button variant="outline" className="md:hidden creative-hover border-2 border-primary text-primary hover:bg-primary hover:text-white">
               <Icon name="Menu" size={20} />
             </Button>
           </div>
