@@ -239,7 +239,8 @@ const Index = () => {
                   <img 
                     src="https://cdn.poehali.dev/files/68bd35ec-0d3b-4923-ab8b-8eca8967e4f3.jpg" 
                     alt="На балу - посвящение Пушкину" 
-                    className="w-full h-48 object-cover"
+                    className="w-50 h-50 object-cover"
+                    style={{width: '200px', height: '200px'}}
                   />
                   <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                     Новинка
@@ -282,7 +283,8 @@ const Index = () => {
                   <img 
                     src="https://cdn.poehali.dev/files/5439da28-a9d9-4141-b9f9-e6f6d9ed308c.jpg" 
                     alt="Колыбельная для мужчины" 
-                    className="w-full h-48 object-cover"
+                    className="w-50 h-50 object-cover"
+                    style={{width: '200px', height: '200px'}}
                   />
                   <div className="absolute top-4 left-4 bg-rose-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                     Хит
@@ -328,7 +330,8 @@ const Index = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/d734da57-30b5-4820-8c73-9c15b4d1e369.jpg" 
                       alt="Красный конь" 
-                      className="w-full h-80 md:h-full object-cover"
+                      className="w-50 h-50 object-cover"
+                      style={{width: '200px', height: '200px'}}
                     />
                     <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Популярное
