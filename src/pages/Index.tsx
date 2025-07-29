@@ -234,88 +234,96 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {/* First Featured Song */}
             <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200">
-              <CardContent className="p-0">
-                <div className="relative">
-                  <img 
-                    src="https://cdn.poehali.dev/files/68bd35ec-0d3b-4923-ab8b-8eca8967e4f3.jpg" 
-                    alt="На балу - посвящение Пушкину" 
-                    className="w-50 h-50 object-cover"
-                    style={{width: '200px', height: '200px'}}
-                  />
-                  <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Новинка
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">На балу</h3>
-                  <p className="text-amber-700 font-medium mb-2">Посвящение Александру Пушкину</p>
-                  <p className="text-gray-600 leading-relaxed mb-4 text-sm">
-                    Лирическая композиция, вдохновлённая поэзией великого поэта.
-                  </p>
-                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-                    <div className="flex items-center gap-2">
-                      <Icon name="Clock" size={16} className="text-amber-600" />
-                      <span>4:15</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Icon name="Music" size={16} className="text-amber-600" />
-                      <span>Классическая</span>
+              <CardContent className="p-6">
+                <div className="flex gap-4">
+                  <div className="relative flex-shrink-0">
+                    <img 
+                      src="https://cdn.poehali.dev/files/68bd35ec-0d3b-4923-ab8b-8eca8967e4f3.jpg" 
+                      alt="На балу - посвящение Пушкину" 
+                      className="w-50 h-50 object-cover rounded-lg"
+                      style={{width: '200px', height: '200px'}}
+                    />
+                    <div className="absolute top-2 left-2 bg-amber-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      Новинка
                     </div>
                   </div>
-                  <a 
-                    href="https://music.yandex.ru/album/37198110/track/140515919" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
-                      <Icon name="Play" size={18} className="mr-2" />
-                      Прослушать
-                    </Button>
-                  </a>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-2">На балу</h3>
+                      <p className="text-amber-700 font-medium mb-2">Посвящение Александру Пушкину</p>
+                      <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                        Лирическая композиция, вдохновлённая поэзией великого поэта.
+                      </p>
+                      <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                        <div className="flex items-center gap-2">
+                          <Icon name="Clock" size={16} className="text-amber-600" />
+                          <span>4:15</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Music" size={16} className="text-amber-600" />
+                          <span>Классическая</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a 
+                      href="https://music.yandex.ru/album/37198110/track/140515919" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+                        <Icon name="Play" size={18} className="mr-2" />
+                        Прослушать
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Second Featured Song */}
             <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-rose-50 to-pink-50 border-2 border-rose-200">
-              <CardContent className="p-0">
-                <div className="relative">
-                  <img 
-                    src="https://cdn.poehali.dev/files/5439da28-a9d9-4141-b9f9-e6f6d9ed308c.jpg" 
-                    alt="Колыбельная для мужчины" 
-                    className="w-50 h-50 object-cover"
-                    style={{width: '200px', height: '200px'}}
-                  />
-                  <div className="absolute top-4 left-4 bg-rose-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Хит
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Колыбельная для мужчины</h3>
-                  <p className="text-rose-700 font-medium mb-2">Ирина Камянчук</p>
-                  <p className="text-gray-600 leading-relaxed mb-4 text-sm">
-                    Трогательная композиция о женской заботе и любви.
-                  </p>
-                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-                    <div className="flex items-center gap-2">
-                      <Icon name="Clock" size={16} className="text-rose-600" />
-                      <span>3:52</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Icon name="Heart" size={16} className="text-rose-600" />
-                      <span>Лирическая</span>
+              <CardContent className="p-6">
+                <div className="flex gap-4">
+                  <div className="relative flex-shrink-0">
+                    <img 
+                      src="https://cdn.poehali.dev/files/5439da28-a9d9-4141-b9f9-e6f6d9ed308c.jpg" 
+                      alt="Колыбельная для мужчины" 
+                      className="w-50 h-50 object-cover rounded-lg"
+                      style={{width: '200px', height: '200px'}}
+                    />
+                    <div className="absolute top-2 left-2 bg-rose-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      Хит
                     </div>
                   </div>
-                  <a 
-                    href="https://music.yandex.ru/album/37286920/track/140717826" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Button className="w-full bg-rose-600 hover:bg-rose-700 text-white">
-                      <Icon name="Play" size={18} className="mr-2" />
-                      Прослушать
-                    </Button>
-                  </a>
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-2">Колыбельная для мужчины</h3>
+                      <p className="text-rose-700 font-medium mb-2">Ирина Камянчук</p>
+                      <p className="text-gray-600 leading-relaxed mb-4 text-sm">
+                        Трогательная композиция о женской заботе и любви.
+                      </p>
+                      <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                        <div className="flex items-center gap-2">
+                          <Icon name="Clock" size={16} className="text-rose-600" />
+                          <span>3:52</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Heart" size={16} className="text-rose-600" />
+                          <span>Лирическая</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a 
+                      href="https://music.yandex.ru/album/37286920/track/140717826" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="w-full bg-rose-600 hover:bg-rose-700 text-white">
+                        <Icon name="Play" size={18} className="mr-2" />
+                        Прослушать
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
