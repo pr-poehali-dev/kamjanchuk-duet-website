@@ -96,7 +96,7 @@ const Index = () => {
               <img
                 src="https://cdn.poehali.dev/files/8bde9145-d144-428c-a3fc-6276039f6824.jpg"
                 alt="Творческий дуэт Камянчук"
-                className="rounded-lg shadow-xl w-full h-96 object-cover"
+                className="rounded-lg shadow-xl w-full h-96 object-cover object-top"
               />
             </div>
             <div className="space-y-8">
