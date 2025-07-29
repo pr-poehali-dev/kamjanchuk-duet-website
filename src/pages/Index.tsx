@@ -144,7 +144,7 @@ const Index = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
                 <Icon name="BookOpen" className="text-purple-600 mb-4" size={48} />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Поэтические сборники</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Поэтические сборники Надежды Камянчук</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center gap-2">
                     <Icon name="Book" size={16} className="text-purple-500" />
@@ -169,7 +169,7 @@ const Index = () => {
             <Card className="shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
                 <Icon name="Headphones" className="text-amber-600 mb-4" size={48} />
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Музыкальные альбомы</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Музыкальные альбомы Ирины Камянчук</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center gap-2">
                     <Icon name="Disc" size={16} className="text-amber-500" />
