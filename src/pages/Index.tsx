@@ -300,18 +300,18 @@ const Index = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Социальные сети</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Icon name="Instagram" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">@duet_kamyanchuk</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="Youtube" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">Дуэт Камянчук</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Icon name="Facebook" className="text-purple-600" size={20} />
-                    <span className="text-gray-600">Творческий дуэт Камянчук</span>
-                  </div>
+                  <a href="https://vk.com/irinamelody" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-600 transition-colors">
+                    <Icon name="Users" className="text-purple-600" size={20} />
+                    <span className="text-gray-600">VK: vk.com/irinamelody</span>
+                  </a>
+                  <a href="https://rutube.ru/channel/55566203/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-600 transition-colors">
+                    <Icon name="PlayCircle" className="text-purple-600" size={20} />
+                    <span className="text-gray-600">RuTube: Канал дуэта</span>
+                  </a>
+                  <a href="https://ok.ru/group/70000003875901" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-purple-600 transition-colors">
+                    <Icon name="Globe" className="text-purple-600" size={20} />
+                    <span className="text-gray-600">Одноклассники: Группа дуэта</span>
+                  </a>
                 </div>
                 <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">
                   Подписаться на новости
