@@ -192,6 +192,23 @@ const Index = () => {
                     "Я рисую лето" (2019)
                   </li>
                 </ul>
+                <div className="mt-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                  <h4 className="text-lg font-bold text-purple-800 mb-3">Готовятся к выпуску:</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-center gap-2">
+                      <Icon name="Clock" size={14} className="text-purple-500" />
+                      "Мы - русские"
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Clock" size={14} className="text-purple-500" />
+                      "Старая пластинка"
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Clock" size={14} className="text-purple-500" />
+                      "Псковская тетрадь"
+                    </li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
           </div>
