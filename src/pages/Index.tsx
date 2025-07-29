@@ -94,8 +94,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/img/65377a4b-54de-4cfb-9c76-5f59b1ae0171.jpg"
-                alt="Дуэт на сцене"
+                src="/img/a8a0e042-2376-4915-81f1-f0bb1f92758c.jpg"
+                alt="Творческий дуэт Камянчук"
                 className="rounded-lg shadow-xl w-full h-96 object-cover"
               />
             </div>
