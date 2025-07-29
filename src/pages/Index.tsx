@@ -230,6 +230,59 @@ const Index = () => {
       <section id="songs" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Песни творческого дуэта</h2>
+          {/* Featured Song */}
+          <div className="mb-16">
+            <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200">
+              <CardContent className="p-0">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="relative">
+                    <img 
+                      src="https://cdn.poehali.dev/files/68bd35ec-0d3b-4923-ab8b-8eca8967e4f3.jpg" 
+                      alt="На балу - посвящение Пушкину" 
+                      className="w-full h-80 md:h-full object-cover"
+                    />
+                    <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Новинка
+                    </div>
+                  </div>
+                  <div className="p-8 flex flex-col justify-center">
+                    <div className="mb-6">
+                      <h3 className="text-3xl font-bold text-gray-800 mb-2">На балу</h3>
+                      <p className="text-amber-700 font-medium mb-2">Посвящение Александру Пушкину</p>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        Лирическая композиция, вдохновлённая поэзией великого русского поэта. 
+                        Музыка переносит слушателя в атмосферу пушкинских балов.
+                      </p>
+                      <div className="flex items-center gap-4 text-sm text-gray-600">
+                        <div className="flex items-center gap-2">
+                          <Icon name="Clock" size={16} className="text-amber-600" />
+                          <span>4:15</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Icon name="Music" size={16} className="text-amber-600" />
+                          <span>Классическая</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <a 
+                        href="https://music.yandex.ru/album/37198110/track/140515919" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+                          <Icon name="Play" size={18} className="mr-2" />
+                          Прослушать на Яндекс.Музыке
+                        </Button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {[
               {
