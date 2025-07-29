@@ -331,47 +331,46 @@ const Index = () => {
 
           {/* Third Featured Song - Full Width */}
           <div className="mb-16">
-            <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200">
+            <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-blue-50 to-cyan-50 border-2 border-blue-200">
               <CardContent className="p-0">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative">
                     <img 
-                      src="https://cdn.poehali.dev/files/d734da57-30b5-4820-8c73-9c15b4d1e369.jpg" 
-                      alt="Красный конь" 
-                      className="w-50 h-50 object-cover"
-                      style={{width: '200px', height: '200px'}}
+                      src="https://cdn.poehali.dev/files/129df1b7-da4d-4334-b1a0-276336f5e591.jpg" 
+                      alt="Я вернусь" 
+                      className="w-full h-80 md:h-full object-cover"
                     />
-                    <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Популярное
+                    <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Новая
                     </div>
                   </div>
                   <div className="p-8 flex flex-col justify-center">
                     <div className="mb-6">
-                      <h3 className="text-3xl font-bold text-gray-800 mb-2">Красный конь</h3>
-                      <p className="text-red-700 font-medium mb-2">Творческий дуэт Камянчук</p>
+                      <h3 className="text-3xl font-bold text-gray-800 mb-2">Я вернусь</h3>
+                      <p className="text-blue-700 font-medium mb-2">Ирина Камянчук</p>
                       <p className="text-gray-600 leading-relaxed mb-4">
-                        Символическая композиция о силе, страсти и свободе. 
-                        Красный конь как метафора жизненной энергии и стремления к мечте.
+                        Мелодичная песня о надежде на лучшее будущее. 
+                        Лирическая баллада о вере в возвращение и обновление.
                       </p>
                       <div className="flex items-center gap-4 text-sm text-gray-600">
                         <div className="flex items-center gap-2">
-                          <Icon name="Clock" size={16} className="text-red-600" />
-                          <span>4:28</span>
+                          <Icon name="Clock" size={16} className="text-blue-600" />
+                          <span>3:41</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Icon name="Zap" size={16} className="text-red-600" />
-                          <span>Динамичная</span>
+                          <Icon name="Star" size={16} className="text-blue-600" />
+                          <span>Мелодичная</span>
                         </div>
                       </div>
                     </div>
                     <div className="flex gap-3">
                       <a 
-                        href="https://music.yandex.ru/album/37270767/track/140681766" 
+                        href="https://music.yandex.ru/album/37359043/track/140884718" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex-1"
                       >
-                        <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
                           <Icon name="Play" size={18} className="mr-2" />
                           Прослушать на Яндекс.Музыке
                         </Button>
