@@ -157,7 +157,7 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
 
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Готовятся к выпуску</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
                   <Icon name="BookOpen" className="text-white" size={24} />
@@ -174,6 +174,15 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
                 <div>
                   <h4 className="font-bold text-gray-800">Времена года</h4>
                   <p className="text-gray-600">Музыкальный альбом</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-red-600 to-rose-600 rounded-full flex items-center justify-center">
+                  <Icon name="Music" className="text-white" size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Мы - русские</h4>
+                  <p className="text-gray-600">Патриотический альбом</p>
                 </div>
               </div>
             </div>
