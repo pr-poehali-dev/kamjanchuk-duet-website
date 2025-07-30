@@ -22,11 +22,7 @@ const Index = () => {
       
       <FeaturedSongs />
       
-      <div className="py-8 px-6 bg-white">
-        <div className="container mx-auto">
-          <SongsGrid />
-        </div>
-      </div>
+
       
       <VideoClips />
       
