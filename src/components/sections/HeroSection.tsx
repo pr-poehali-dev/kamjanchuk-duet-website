@@ -24,7 +24,6 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
                 { label: 'Главная', id: 'home' },
                 { label: 'О нас', id: 'about' },
                 { label: 'Творчество', id: 'works' },
-                { label: 'Концерты', id: 'concerts' },
                 { label: 'Контакты', id: 'contact' }
               ].map((item) => (
                 <button
