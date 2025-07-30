@@ -229,7 +229,7 @@ const Index = () => {
       {/* Songs Section */}
       <section id="songs" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Песни творческого дуэта</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Новые песни творческого дуэта</h2>
           {/* Featured Song */}
           <div className="mb-16">
             <Card className="shadow-xl overflow-hidden bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200">
