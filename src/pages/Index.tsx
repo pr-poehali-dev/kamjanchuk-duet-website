@@ -209,7 +209,7 @@ const Index = () => {
                     </li>
                     <li className="flex items-center gap-2">
                       <Icon name="Clock" size={14} className="text-purple-500" />
-                      "Псковская тетрадь"
+                      "Хранилище времён"
                     </li>
                   </ul>
                 </div>
@@ -409,7 +409,7 @@ const Index = () => {
                 duration: "3:28"
               },
               {
-                title: "Псковская тетрадь",
+                title: "Хранилище времён",
                 description: "Поэтическое посвящение родному городу",
                 duration: "4:33"
               },
