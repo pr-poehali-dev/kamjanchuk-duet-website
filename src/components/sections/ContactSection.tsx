@@ -13,7 +13,10 @@ const ContactSection = () => {
             <p className="text-lg text-gray-600 mb-6">
               Каждая песня — это частица нашей души, воплощенная в мелодию и слово
             </p>
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg">
+            <Button 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 text-lg"
+              onClick={() => window.open('https://vk.com/audios-16809861', '_blank')}
+            >
               Послушать все песни
             </Button>
           </div>
