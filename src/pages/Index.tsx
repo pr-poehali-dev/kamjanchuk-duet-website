@@ -457,6 +457,71 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Video Clips Section */}
+      <section className="py-20 px-6 bg-gradient-to-r from-indigo-50 to-blue-50">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Новые видеоклипы</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {[
+              {
+                id: "575740",
+                title: "Видеоклип 1",
+                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                url: "https://music.yandex.ru/video?ids=575740"
+              },
+              {
+                id: "575249", 
+                title: "Видеоклип 2",
+                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                url: "https://music.yandex.ru/video?ids=575249"
+              },
+              {
+                id: "575738",
+                title: "Видеоклип 3", 
+                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                url: "https://music.yandex.ru/video?ids=575738"
+              },
+              {
+                id: "575739",
+                title: "Видеоклип 4",
+                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400", 
+                url: "https://music.yandex.ru/video?ids=575739"
+              }
+            ].map((video, index) => (
+              <Card key={video.id} className="shadow-lg hover:shadow-xl transition-shadow overflow-hidden bg-white">
+                <div className="relative">
+                  <img 
+                    src={video.thumbnail}
+                    alt={video.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <Icon name="Play" size={48} className="text-white" />
+                  </div>
+                  <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 rounded text-xs font-medium">
+                    HD
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold text-gray-800 mb-2">{video.title}</h3>
+                  <p className="text-sm text-gray-600 mb-4">Творческий дуэт Камянчук</p>
+                  <a 
+                    href={video.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                      <Icon name="Play" size={16} className="mr-2" />
+                      Смотреть
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-gradient-to-r from-gray-100 to-purple-100">
         <div className="container mx-auto">
