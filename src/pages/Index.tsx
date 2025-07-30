@@ -465,26 +465,26 @@ const Index = () => {
             {[
               {
                 id: "575740",
-                title: "Видеоклип 1",
-                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                title: "Девясил",
+                thumbnail: "https://cdn.poehali.dev/files/b5c74c8b-4061-4b55-abf4-6b2adbd61ff9.jpeg",
                 url: "https://music.yandex.ru/video?ids=575740"
               },
               {
                 id: "575249", 
-                title: "Видеоклип 2",
-                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                title: "На балу",
+                thumbnail: "https://cdn.poehali.dev/files/bd10c0f4-2477-42e9-b904-98c4cdc61441.jpg",
                 url: "https://music.yandex.ru/video?ids=575249"
               },
               {
                 id: "575738",
-                title: "Видеоклип 3", 
-                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400",
+                title: "Колыбельная для мужчины", 
+                thumbnail: "https://cdn.poehali.dev/files/acd176ee-cdf0-4ff8-aade-ff0dbd7aac64.jpg",
                 url: "https://music.yandex.ru/video?ids=575738"
               },
               {
                 id: "575739",
-                title: "Видеоклип 4",
-                thumbnail: "https://avatars.yandex.net/get-music-content/10701482/5bb76fe4.a.29002002-1/400x400", 
+                title: "Я рисую лето",
+                thumbnail: "https://cdn.poehali.dev/files/9404a8d9-b807-4cd3-a9de-3dbe03c80f76.jpg", 
                 url: "https://music.yandex.ru/video?ids=575739"
               }
             ].map((video, index) => (
