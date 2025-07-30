@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 interface HeroSectionProps {
