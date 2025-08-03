@@ -11,32 +11,32 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
   return (
     <>
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-lg shadow-xl sticky top-0 z-50 border-b border-ocean-200">
+      <header className="bg-black/95 backdrop-blur-lg shadow-2xl sticky top-0 z-50 border-b-2 border-neon-500 cyber-border">
         <div className="container mx-auto px-6 py-5">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
-              <div className="p-2 rounded-full bg-gradient-to-r from-ocean-500 to-emerald-500">
-                <Icon name="Music" className="text-white" size={28} />
+              <div className="p-3 bg-gradient-to-r from-neon-500 to-electric-600 clip-path-polygon animate-neon-pulse">
+                <Icon name="Music" className="text-white animate-aggressive-shake" size={32} />
               </div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-ocean-700 to-emerald-600 bg-clip-text text-transparent">
-                Дуэт Камянчук
+              <h1 className="text-3xl font-bold bg-gradient-to-r from-neon-400 to-electric-500 bg-clip-text text-transparent neon-glow">
+                ДУЭТ КАМЯНЧУК
               </h1>
             </div>
             
             <nav className="hidden md:flex space-x-8">
               {[
-                { label: 'Главная', id: 'home' },
-                { label: 'О нас', id: 'about' },
-                { label: 'Творчество', id: 'works' },
-                { label: 'Контакты', id: 'contact' }
+                { label: 'ГЛАВНАЯ', id: 'home' },
+                { label: 'О НАС', id: 'about' },
+                { label: 'ТВОРЧЕСТВО', id: 'works' },
+                { label: 'КОНТАКТЫ', id: 'contact' }
               ].map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-slate-600 hover:text-ocean-600 transition-all duration-300 font-medium relative pb-1 ${
+                  className={`text-white hover:text-neon-400 transition-all duration-300 font-bold relative pb-2 transform hover:scale-110 ${
                     activeSection === item.id 
-                      ? 'text-ocean-600 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-ocean-500 after:to-emerald-500' 
-                      : 'hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-ocean-300'
+                      ? 'text-neon-400 neon-glow after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-neon-500 after:to-electric-500 after:animate-neon-pulse' 
+                      : 'hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-0.5 hover:after:bg-neon-400'
                   }`}
                 >
                   {item.label}
@@ -44,8 +44,8 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
               ))}
             </nav>
             
-            <Button variant="outline" className="md:hidden border-ocean-300 hover:bg-ocean-50">
-              <Icon name="Menu" size={20} />
+            <Button variant="outline" className="md:hidden border-2 border-neon-500 hover:bg-neon-500 text-neon-400 hover:text-black cyber-border">
+              <Icon name="Menu" size={24} />
             </Button>
           </div>
         </div>

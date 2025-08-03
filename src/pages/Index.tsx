@@ -14,7 +14,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-ocean-50">
+    <div className="min-h-screen bg-black">
       <HeroSection 
         activeSection={activeSection}
         scrollToSection={scrollToSection}
