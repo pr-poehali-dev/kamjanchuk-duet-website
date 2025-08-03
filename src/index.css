@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 280 100% 70%; /* ярко-фиолетовый */
+    --primary: 198 89% 42%; /* океанский синий */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 330 100% 65%; /* ярко-розовый */
+    --secondary: 160 84% 39%; /* изумрудный */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 200 100% 60%; /* ярко-циан */
+    --accent: 262 83% 58%; /* фиолетовый */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -99,7 +99,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
   }
 
   h1,
@@ -108,36 +108,28 @@
   h4,
   h5,
   h6 {
-    font-family: "Playfair Display", serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
   }
 
-  .artistic-gradient {
+  .modern-gradient {
     background: linear-gradient(
       135deg,
-      hsl(280, 100%, 70%) 0%,
-      /* ярко-фиолетовый */ hsl(330, 100%, 65%) 20%,
-      /* ярко-розовый */ hsl(200, 100%, 60%) 40%,
-      /* ярко-циан */ hsl(45, 100%, 55%) 60%,
-      /* ярко-золотой */ hsl(120, 80%, 50%) 80%,
-      /* ярко-зеленый */ hsl(280, 100%, 70%) 100% /* снова фиолетовый */
+      hsl(198, 89%, 42%) 0%,
+      hsl(160, 84%, 39%) 50%,
+      hsl(262, 83%, 58%) 100%
     );
-    background-size: 300% 300%;
-    animation: gradient-shift 4s ease infinite;
+    background-size: 200% 200%;
+    animation: modern-shift 6s ease infinite;
   }
 
-  @keyframes gradient-shift {
+  @keyframes modern-shift {
     0%,
     100% {
       background-position: 0% 50%;
     }
-    25% {
-      background-position: 100% 50%;
-    }
     50% {
-      background-position: 100% 100%;
-    }
-    75% {
-      background-position: 0% 100%;
+      background-position: 100% 50%;
     }
   }
 
